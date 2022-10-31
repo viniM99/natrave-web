@@ -97,11 +97,11 @@ export function Login() {
                         </div>
 
                         <button
-                            className='text-white text-center bg-red-500 rounded-2xl w-full mt-8 py-3 hover:opacity-90 disabled:opacity-50'
+                            className='text-white text-center bg-red-500 rounded-2xl w-full mt-8 py-3 hover:opacity-90'
                             type='submit'
                             disabled={!formik.isValid || formik.isSubmitting}
                         > 
-                            {formik.isSubmitting ? 'Carregando' : 'Entrar'}
+                            {formik.isSubmitting ? <img className='m-auto' src="/rolling-loader.svg" alt="imagem de carregamento de informações" /> : 'Entrar'}
                         </button>
                     </form>
 
