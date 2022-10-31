@@ -26,10 +26,15 @@ export function Signup() {
                 method: 'post',
                 baseURL: import.meta.env.VITE_API_URL,
                 url: '/users',
-                data: values
+                data: values,
+                auth: {
+                    username: values.email,
+                    password: values.password
+                }
             })
 
             window.localStorage.setItem('auth', JSON.stringify(res.data))
+            setAuth(res.data)
 
         },
         initialValues: {
