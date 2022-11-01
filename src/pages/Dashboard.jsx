@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useAsync, useAsyncFn, useLocalStorage } from 'react-use'
+import { useAsyncFn, useLocalStorage } from 'react-use'
 import { Navigate } from 'react-router-dom'
 import axios from 'axios'
 import { format, formatISO } from 'date-fns'
@@ -94,6 +94,9 @@ export function Dashboard() {
             <main className='container max-w-3xl'>
                
                 <div className='mobile:px-[1.6rem]'>
+                    <p className='pt-12 pb-8 font-bold text-2xl text-red-500'>
+                        Diga o seu palpite
+                    </p>
 
                     <DateSelect currentDate={currentDate} onChange={setCurrentDate} /> 
 
