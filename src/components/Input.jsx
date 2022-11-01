@@ -1,5 +1,5 @@
 export const Input = ({ name, label, error, ...props }) => (
-    <div className='flex flex-col w-full md:w-full'>
+    <div className='flex flex-col w-full'>
         <label
             className='text-sm text-gray-500 pt-4 pb-2 font-semibold' 
             htmlFor={name}

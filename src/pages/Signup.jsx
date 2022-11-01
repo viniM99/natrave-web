@@ -70,7 +70,7 @@ export function Signup() {
                     <p className='text-2xl text-red-700 pl-[1.6rem]'>Crie sua conta</p>
                 </div>
 
-                <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 container max-w-3xl mobile:px-[1.6rem]'>
+                <div className='container max-w-3xl'>
 
                     <form className='px-4' onSubmit={formik.handleSubmit}>
 
@@ -121,7 +121,7 @@ export function Signup() {
                         </div>
 
                         <button
-                            className='text-white text-center bg-red-500 rounded-2xl w-full mt-8 py-3 hover:opacity-90'
+                            className='text-white text-center bg-red-500 rounded-2xl w-full my-8 py-3 hover:opacity-90'
                             type='submit'
                             disabled={!formik.isValid || formik.isSubmitting}
                         > 

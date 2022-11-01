@@ -64,7 +64,7 @@ export function Login() {
                     <p className='text-2xl text-red-700 pl-[1.6rem]'>Entre na sua conta</p>
                 </div>
 
-                <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 container max-w-3xl mobile:px-[1.6rem]'>
+                <div className='container max-w-3xl'>
 
                     <div className='flex justify-center pb-10'>
                         <User size={130} className='border-2 text-black border-gray-300 rounded-full p-2' />
@@ -97,7 +97,7 @@ export function Login() {
                         </div>
 
                         <button
-                            className='text-white text-center bg-red-500 rounded-2xl w-full mt-8 py-3 hover:opacity-90'
+                            className='text-white text-center bg-red-500 rounded-2xl w-full my-8 py-3 hover:opacity-90'
                             type='submit'
                             disabled={!formik.isValid || formik.isSubmitting}
                         > 
