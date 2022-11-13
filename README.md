@@ -33,3 +33,6 @@ $ npm install
 # Iniciar o projeto
 $ npm run dev
 ```
+
+## Sobre o projeto
+    O projeto foi desenvolvido no Evento Full Stack Chanllenge da Codar.me. Consiste em um bolão da copa no Qatar 2022, com ele você consegue dar palpites sobre os placares e ainda compartilhar seu link com os amigos para ele ver os seus palpites.
